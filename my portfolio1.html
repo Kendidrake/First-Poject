@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY portfolio</title>
+    <link rel="stylesheet" href="../public/mr portfolio1.css">
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo"><img src="../Images/Logo.png" alt=""></h2>
+            <div class="toggle "></div>
+        </header>
+        <img src="../Images/My landing page background (1).jpg" alt="my landing page " height="100px" width="100%">
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Welcome to <span> My portfolio</span> <span class="i">!</span> </h2>
+            <h3>My name is  <span>Jedidiah omokide</span> and i am a <span>web Developer</span><span class="i">!</span> </h3>
+            <p>
+                I am an Aspiring Full-Stack Web Developer. I am Passionate about building responsive, user-friendly web applications and continually learning new technologies.
+
+
+            </p>
+        
+
+        </div>
+<ul class="social">
+    <li><a href="#"><img src="../Images/icons8-facebook-30.png" alt=""></a></li>
+    <li><a href="#"><img src="../Images/icons8-twitter-50.png" height="30px"></a></li>
+    <li><a href="#"><img src="../Images/icons8-instagram-50.png" height="30px"></a></li>
+</ul>
+    </section>
+    <div class="menu">
+       
+        <ul>
+            <li><a href="../public/my portfolio1.html">Home</a></li>
+            <li><a href="about me .html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact .html">Contact</a></li>
+            <li><a href="form.html"></a></li>
+
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
