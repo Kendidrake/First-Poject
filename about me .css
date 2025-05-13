@@ -34,8 +34,8 @@
     justify-content: space-between;
     }
     .logo>img{
-         height: 50px;
-         width: 50px;
+         height: 20vh;
+       width: 20vw;
     }
     .toggle{
         position: relative;
@@ -238,10 +238,8 @@
 
         }
         .logo>img{
-            width: 25px;
-            height: 25px;
-            top: 0;
-            left: 0;
+            width: 20vw;
+            height: 10vh;
         }
         .toggle {
             width: 50px;
