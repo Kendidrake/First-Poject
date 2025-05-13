@@ -244,12 +244,32 @@
         .text h2>span {
             font-size: 1em;
         }
+         .text h2>span:hover{
+            font-size: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color:   rgb(84, 46, 141);
+            text-shadow:10px 10px 10px
+            rgb(84, 46, 141);
+            color:  rgb(84, 46, 141);
+            
+        }
 
         .text h3 {
             font-size: 1.5em;
         }
+    
         .text h3>span {
             font-size: 1em;
+        }
+        .text h3>span:hover{
+            font-size: 1.5em;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-shadow:10px 10px 10px
+             rgb(84, 46, 141);
+             color:   rgb(84, 46, 141) ;
+            
         }
         .text p {
             font-size: 1em;
@@ -258,5 +278,12 @@
             font-size: 1em;
             padding: 8px 20px;
         }
+        .text a:hover{
+            background:whitesmoke;
+            color: rgb(84, 46, 141);
+            letter-spacing: 3px;
+            transform: translateY(10px) scale(1.2);
+        }
+
          
     }
