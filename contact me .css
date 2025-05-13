@@ -142,7 +142,7 @@
     .social{
         position: absolute;
         bottom: 20px;
-        left: 20px;
+        right: 20px;
         z-index: 10;
         display: flex;
         align-items: center;
@@ -237,6 +237,7 @@
         .text a {
             font-size: 1em;
             padding: 8px 20px;
+            background: none;
         }
          
     }

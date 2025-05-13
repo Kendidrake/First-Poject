@@ -231,8 +231,11 @@
         }
        
         .logo {
-           width: 15vw;
-           height: 5vh;
+           width: 17vw;
+           height: 3vh;
+           text-align: center;
+           
+
         }
         .toggle {
             width: 50px;
@@ -249,8 +252,7 @@
             font-weight: 300;
             text-transform: uppercase;
             color:   rgb(84, 46, 141);
-            text-shadow:10px 10px 10px
-            rgb(84, 46, 141);
+           
             color:  rgb(84, 46, 141);
             
         }
