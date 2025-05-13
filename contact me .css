@@ -41,7 +41,7 @@
         position: relative;
         width: 60px;
         height: 60px;
-        background: url(../Images/icons8-menu-bar-50.png);
+        background: url(Images/icons8-menu-bar-50.png);
         cursor: pointer;
         background-repeat:no-repeat;
         background-size: 30px ;
@@ -49,7 +49,7 @@
         background-position: center;
         }
         .toggle.active {
-            background: url(../Images/icons8-close-50.png);
+            background: url(Images/icons8-close-50.png);
             background-repeat:no-repeat;
             background-size: 30px ;
             background-repeat: no-repeat;
