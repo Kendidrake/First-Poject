@@ -254,6 +254,18 @@
             width: 50px;
             height: 50px;
         }
+        .text{
+            animation: slide_in 1s ease-in-out;
+           
+        }
+        @keyframes slide_in {
+            0% {
+                transform: translatex(-100%);
+            }
+            100% {
+                transform: translatex(0);
+            }
+        }
         .text h2 {
             font-size: 2em;
         }
