@@ -69,6 +69,15 @@
             z-index: 1;
            top: 30px;
            bottom: 30px;
+           animation: slide_in 1s ease-in-out;
+        }
+        @keyframes slide_in {
+            0% {
+                transform: translatex(-100%);
+            }
+            100% {
+                transform: translatex(0);
+            }
         }
         .overlay{
             position: absolute;
