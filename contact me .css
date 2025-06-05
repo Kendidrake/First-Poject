@@ -5,6 +5,116 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Add at the end of your CSS file */
+:root {
+    --background-color: rgba(17, 17, 17, 0.9);
+    --text-color: #fff;
+    --overlay-color: rgba(44, 43, 43, 0.3);
+}
+
+.light-theme {
+    --background-color: rgba(245, 245, 245, 0.9);
+    --text-color: #111;
+    --overlay-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Update the showcase styles */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background-color);
+    z-index: -1;
+}
+
+/* Update the image styles */
+.showcase > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.theme-switch {
+    position: relative;
+    margin-right: 20px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.theme-label {
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.theme-label i {
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+/* Update text color */
+.text h2, .text h3, .text p {
+    color: var(--text-color);
+}
+
+/* Update social icons for better visibility */
+.social > li > a {
+    filter: invert(1);
+}
+
+.light-theme .social > li > a {
+    filter: invert(0);
+}
+
+.theme-label:hover {
+    background: #444;
+}
+
+/* Update existing styles */
+.showcase.active {
+    right: 300px;
+    transition: all 1s ease-in-out;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
 .showcase {
     position:absolute;
     right: 0;

@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="contact me .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/my portfolio logo.png" type="image/x-icon">
 </head>
+
 <body>
     <section class="showcase ">
         <header>
             <h2 class="logo"><img src="Images/my portfolio logo.png" alt=""></h2>
+            <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
             <div class="toggle "></div>
         </header>
         <img src="Images/My landing page background (1).jpg" alt="my landing page " height="100px" width="100%">
@@ -41,13 +51,43 @@
         </ul>
     </div>
     <script>
-        const menuToggle = document.querySelector('.toggle');
-        const showcase = document.querySelector('.showcase');
-
+    // Menu toggle functionality
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+    
+    if (menuToggle) {
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             showcase.classList.toggle('active');
         });
-    </script>
+    }
+
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    if (themeToggle) {
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.classList.add(savedTheme);
+            showcase.classList.add(savedTheme);
+            if (savedTheme === 'light-theme') {
+                themeToggle.checked = true;
+            }
+        }
+
+        themeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('light-theme');
+                showcase.classList.add('light-theme');
+                localStorage.setItem('theme', 'light-theme');
+            } else {
+                document.body.classList.remove('light-theme');
+                showcase.classList.remove('light-theme');
+                localStorage.setItem('theme', '');
+            }
+        });
+    }
+</script>
 </body>
 </html>

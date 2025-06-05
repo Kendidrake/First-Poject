@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background: #f0f0f0;
+    color: #333;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: #333;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+h2{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    color: #333;
+}
+header{
+    background: #333 hidden;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+header h1{
+    flex: 1;
+}
+header>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+header nav{
+    flex: 2;
+  
+    display: flex;
+    justify-content:center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header nav ul li{
+  
+    padding: 10px 20px;
+  
+ justify-content: space-between;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: transform 1s ease-in-out;
+    background-color: #fff;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: inline-block;
+    text-align: center;
+      animation: slideTop 2s ease forwards;
+      animation-delay: calc(.5s * var(--i));
+
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    background-color: #333;
+color: #fff;
+    border-radius: 5px;
+    transform: translateY(-5px);
+}
+header nav ul li a:hover{
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(-5px);
+}
+.socials{
+ 
+justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+.socials>a{
+display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+  width: 50px;
+  height: 50px;
+   
+   transform: rotate(45deg);
+    transition: all 1s ease-in-out;
+background: transparent;
+    border: 2px solid red transparent;
+    opacity: 0;
+animation: slideSci 2s ease forwards;
+      animation-delay: calc(.5s * var(--i));
+}
+
+
+.socials>a>i{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 1s ease-in-out;
+   transform: rotate(-45deg);
+    
+}
+.socials>a:hover{
+    background: white ;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 1s ease-in-out;
+transform: scale(1.2);
+border: 2px solid rgb(240, 240, 240);
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   height: 100vh;
+    width:100%;
+    padding: 40px 8%;
+
+
+overflow: hidden;
+
+
+}
+.Home-content{
+    max-width: 630px;
+}
+.Home-content h1{
+font-size: 2.5rem;
+line-height: 2.2;
+font-size: 900;
+text-transform: uppercase;
+animation: slideButtom 1s ease-in forwards;
+}
+.Home-content h3{
+    font-size: 2rem;
+     font-family: 'Permanent Marker', cursive;
+     font-weight: 800;
+}
+.Home-content p{
+    font-size: 23px;
+}
+.Home-content  button{
+margin-top: 10px;
+background-color:  #333;
+border-radius: 20px;
+height: 30px;
+box-shadow: 0 0 4px
+rgba(0, 0, 0, 0.2);
+transition: transform 0.9s ease;
+}
+.Home-content>button:hover{
+    transform: translateY(10px);
+    background: white;
+    text-transform: uppercase;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2) ;
+ 
+}
+.Home-content button a{
+    padding: 10px ;
+    color: #fff;
+    text-decoration: none;
+}
+
+.Home-content button a:hover{
+    color: #333;
+    font-weight: 700;
+    text-shadow: #333;
+}
+
+.socials>a>i:hover{
+    color:  #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 1s ease-in-out;
+    
+    transform: scale(1.2);
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.home-img{
+    justify-content: space-between;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    transform: rotate(45deg);
+    right: -7%;
+}
+.home-img>.rhombus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 25px solid #333;
+transition: transform 1s ease-in-out;
+}
+.home-img>.rhombus:hover{
+    transform: translateX(-20px);
+}
+.home-img>.rhombus>img{
+    position: absolute;
+    width: 290px;
+    top: 1px;
+    left: 3px;
+    transform: rotate(89deg);
+    height: 290px;
+}
+
+@keyframes  slideRight {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }  
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes  slideTop {
+  0%{
+    transform: translatey(100px);
+    opacity: 0;
+  }  
+  100%{
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+@keyframes  slideSci {
+  0%{
+    transform: translateX(-100px) rotate(45deg);
+    opacity: 0;
+  }  
+  100%{
+    transform: translateX(0) rotate(45deg);
+    opacity: 1;
+  }
+}
+@keyframes  slideButtom {
+  0%{
+    transform: translatey(100px);
+    opacity: 0;
+  }  
+  100%{
+    transform: translatey(0);
+    opacity: 1;
+  }
+
+}
